@@ -18,6 +18,7 @@ app.get("/", (req, res) => {
 });
 
 
+
 app.use("/api/v1", routes);
 
 app.listen(port, () => {
