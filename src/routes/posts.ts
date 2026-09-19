@@ -3,6 +3,7 @@ import prisma from "../lib/prisma";
 
 const router = Router();
 
+
 // GET all posts
 router.get("/", async (req, res) => {
   const posts = await prisma.post.findMany({
