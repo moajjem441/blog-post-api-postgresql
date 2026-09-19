@@ -25,6 +25,7 @@ router.get("/:id", async (req, res) => {
   res.status(200).json({ message: "Post found", post });
 });
 
+
 // POST create post
 router.post("/", async (req, res) => {
   const { title, content, author } = req.body;
