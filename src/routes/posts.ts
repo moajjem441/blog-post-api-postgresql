@@ -28,7 +28,7 @@ router.get("/:id", async (req, res) => {
 
 // POST create post
 router.post("/", async (req, res) => {
-  const { title, content, author } = req.body;
+  const { title, content,  author } = req.body;
 
   if (!title || typeof title !== "string" || title.trim().length < 3) {
     return res.status(400).json({
